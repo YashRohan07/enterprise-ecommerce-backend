@@ -65,23 +65,26 @@ Service --> ExternalAPI[(Payment / Shipping APIs)]
 
 ---
 
-# Design Principles
+## Design Principles
 
 The architecture follows several important engineering principles.
+These principles guide architectural decisions and help maintain long-term code quality.
 
-KISS  
+### KISS
+
 Keep solutions simple and easy to understand.
 
-DRY  
+### DRY
+
 Avoid unnecessary duplication.
 
-YAGNI  
-Do not build features before they are needed.
+### YAGNI
 
-SOLID  
-Apply clean architecture practices gradually as the system grows.
+Do not implement features before they are needed.
 
----
+### SOLID
+
+## Apply clean architecture practices gradually as the system grows.
 
 # Development Approach
 

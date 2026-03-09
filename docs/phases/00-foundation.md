@@ -1,4 +1,4 @@
-# Phase 0 — JavaScript & Node.js Foundation
+# Phase 0 - Javascript & Node.js Foundation
 
 ## Goal
 

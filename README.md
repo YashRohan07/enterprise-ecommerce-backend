@@ -45,20 +45,20 @@ The goal is not only to build an application, but also to create a **reusable ba
 
 The project is developed incrementally.
 
-Phase 0 — JavaScript & Node.js Foundation
-Phase 1 — Express Architecture Setup
-Phase 2 — Authentication & Authorization
-Phase 3 — Product Catalog
-Phase 4 — Cart & Checkout
-Phase 5 — Order Management
-Phase 6 — Payment Integration
-Phase 7 — Inventory Management
-Phase 8 — Shipping & Fulfillment
-Phase 9 — Background Jobs & Queues
-Phase 10 — Observability (Logging, Metrics)
-Phase 11 — Security Hardening
-Phase 12 — Testing & Quality
-Phase 13 — Deployment Readiness
+- Phase 0 — JavaScript & Node.js Foundation
+- Phase 1 — Express Architecture Setup
+- Phase 2 — Authentication & Authorization
+- Phase 3 — Product Catalog
+- Phase 4 — Cart & Checkout
+- Phase 5 — Order Management
+- Phase 6 — Payment Integration
+- Phase 7 — Inventory Management
+- Phase 8 — Shipping & Fulfillment
+- Phase 9 — Background Jobs & Queues
+- Phase 10 — Observability (Logging, Metrics)
+- Phase 11 — Security Hardening
+- Phase 12 — Testing & Quality
+- Phase 13 — Deployment Readiness
 
 ---
 
@@ -154,10 +154,10 @@ docs/comparisons/ → technology and architecture comparisons
 
 This project follows several core engineering principles.
 
-**KISS** — Keep solutions simple
-**DRY** — Avoid unnecessary duplication
-**YAGNI** — Do not implement features before they are needed
-**SOLID** — Apply clean architecture principles gradually
+- **KISS** — Keep solutions simple
+- **DRY** — Avoid unnecessary duplication
+- **YAGNI** — Do not implement features before they are needed
+- **SOLID** — Apply clean architecture principles gradually
 
 The focus is on **learning the fundamentals before introducing complexity**.
 
