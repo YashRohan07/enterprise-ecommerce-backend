@@ -105,7 +105,9 @@ Controllers handle:
 
 ### Example structure
 
+```
 Route → Controller
+```
 
 ### Advantages
 
@@ -128,20 +130,22 @@ In layered architecture, responsibilities are separated into different layers.
 
 Example request flow:
 
+```
 Route → Controller → Service → Utility
+```
 
 ### Responsibilities
 
-Route  
+**Route**  
 Defines API endpoints.
 
-Controller  
+**Controller**  
 Handles HTTP concerns such as request parsing and response formatting.
 
-Service  
+**Service**  
 Contains business logic.
 
-Utility / Helpers  
+**Utility / Helpers**  
 Provide reusable helper functions.
 
 ---
@@ -172,7 +176,7 @@ Layered architecture was chosen because it provides:
 
 The final architecture decision is documented in:
 
-docs/decisions/ADR-001-layered-architecture.md
+[ADR-001-layered-architecture.md](../decisions/ADR-001-layered-architecture.md)
 
 ---
 
@@ -197,11 +201,13 @@ Each controller handles errors using try–catch blocks.
 
 Example pattern:
 
+```js
 try {
-// business logic
+  // business logic
 } catch (error) {
-// handle error
+  // handle error
 }
+```
 
 ### Advantages
 
@@ -223,7 +229,9 @@ In this approach, controllers throw errors and a global middleware handles them.
 
 Example flow:
 
+```
 Controller → throw error → Global Error Middleware
+```
 
 ### Advantages
 
@@ -266,12 +274,11 @@ These decisions form the **architectural foundation of the backend system**.
 
 The final architecture decisions based on these comparisons are documented in:
 
-docs/decisions/
-ADR-001-layered-architecture.md
-ADR-002-app-server-separation.md
-ADR-003-centralized-config.md
-ADR-004-error-middleware.md
-ADR-005-api-versioning.md
+- [ADR-001-layered-architecture.md](../decisions/ADR-001-layered-architecture.md)
+- [ADR-002-app-server-separation.md](../decisions/ADR-002-app-server-separation.md)
+- [ADR-003-centralized-config.md](../decisions/ADR-003-centralized-config.md)
+- [ADR-004-error-middleware.md](../decisions/ADR-004-error-middleware.md)
+- [ADR-005-api-versioning.md](../decisions/ADR-005-api-versioning.md)
 
 ---
 
@@ -281,4 +288,4 @@ This document explains **why certain architecture decisions were made**.
 
 The implementation details are documented in:
 
-docs/phases/01-express-architecture.md
+[docs/phases/01-express-architecture.md](../phases/01-express-architecture.md)

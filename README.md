@@ -1,4 +1,3 @@
-```md
 # Enterprise eCommerce Backend
 
 ![Node](https://img.shields.io/badge/node-%3E%3D18-green)
@@ -31,11 +30,8 @@ The goal is not only to build an application, but also to create a **reusable ba
 # Architecture
 
 The backend follows a **layered architecture pattern**.
-```
 
 Controller → Service → Repository → Database
-
-```
 
 Supporting components:
 
@@ -44,11 +40,7 @@ Supporting components:
 
 For a detailed architecture explanation see:
 
-```
-
-Architecture.md
-
-```
+`Architecture.md`
 
 ---
 
@@ -140,15 +132,14 @@ This project gradually implements the core modules of a **real-world eCommerce b
 
 # Project Structure
 
-```
-
+```text
 enterprise-ecommerce-backend/
 │
 ├── docs/
-│ ├── phases/
-│ ├── decisions/
-│ ├── comparisons/
-│ └── templates/
+│   ├── phases/
+│   ├── decisions/
+│   ├── comparisons/
+│   └── templates/
 │
 ├── src/
 ├── tests/
@@ -158,7 +149,6 @@ enterprise-ecommerce-backend/
 ├── .gitignore
 ├── .env.example
 └── package.json
-
 ```
 
 ---
@@ -167,14 +157,10 @@ enterprise-ecommerce-backend/
 
 Detailed architecture documentation is available in the `docs` directory.
 
-```
-
-docs/phases/ → implementation details for each development phase
-docs/decisions/ → architecture decision records (ADR)
-docs/comparisons/ → architecture and technology comparisons
-docs/templates/ → reusable documentation templates
-
-````
+- `docs/phases/` → implementation details for each development phase
+- `docs/decisions/` → architecture decision records (ADR)
+- `docs/comparisons/` → architecture and technology comparisons
+- `docs/templates/` → reusable documentation templates
 
 This documentation explains both the **implementation details** and the **reasoning behind architectural decisions**.
 
@@ -201,7 +187,7 @@ Follow these steps to set up the project locally.
 
 ```bash
 git clone https://github.com/YashRohan07/enterprise-ecommerce-backend
-````
+```
 
 ## 2. Navigate to the project directory
 
@@ -231,7 +217,3 @@ Then update the environment variables if necessary.
 # License
 
 ISC
-
-```
-
-```

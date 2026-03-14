@@ -1,4 +1,3 @@
-```md
 # System Architecture Overview
 
 This document explains the high-level backend architecture used in this project.
@@ -15,27 +14,24 @@ The goal of the architecture is to keep the system:
 # Architecture Style
 
 This project follows a **layered architecture pattern**.
-```
 
 Controller → Service → Repository → Database
 
-````
-
 Each layer has a clear responsibility.
 
-**Controller**
+**Controller**  
 Handles HTTP requests and responses.
 
-**Service**
+**Service**  
 Contains business logic and application rules.
 
-**Repository**
+**Repository**  
 Handles database access and data persistence.
 
-**Validator**
+**Validator**  
 Validates incoming request data before it reaches business logic.
 
-**Middleware**
+**Middleware**  
 Handles cross-cutting concerns such as authentication, logging, and error handling.
 
 ---
@@ -65,13 +61,13 @@ Worker --> EmailService
 Worker --> NotificationService
 
 Service --> ExternalAPI[(Payment / Shipping APIs)]
-````
+```
 
 ---
 
 # Design Principles
 
-The architecture follows several important engineering principles.
+The architecture follows several important engineering principles.  
 These principles guide architectural decisions and help maintain long-term code quality.
 
 ### KISS
@@ -109,7 +105,3 @@ This approach ensures:
 # Project Goal
 
 The long-term goal of this project is to build a **production-grade eCommerce backend architecture template** that demonstrates real-world backend engineering practices.
-
-```
-
-```
