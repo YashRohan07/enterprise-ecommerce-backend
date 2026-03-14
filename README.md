@@ -1,3 +1,4 @@
+```md
 # Enterprise eCommerce Backend
 
 ![Node](https://img.shields.io/badge/node-%3E%3D18-green)
@@ -13,25 +14,45 @@ The goal is not only to build an application, but also to create a **reusable ba
 
 ---
 
-## Tech Stack
+# Tech Stack
 
-### Backend
+## Backend
 
 - Node.js
 - Express.js _(introduced in Phase 1)_
 
-### Database
+## Database
 
 - PostgreSQL
 - Sequelize ORM
 
-### Architecture
+---
 
-- Controller → Service → Repository → Validator → Middleware
+# Architecture
+
+The backend follows a **layered architecture pattern**.
+```
+
+Controller → Service → Repository → Database
+
+```
+
+Supporting components:
+
+- **Validator** → validates request data
+- **Middleware** → handles cross-cutting concerns (authentication, logging, error handling)
+
+For a detailed architecture explanation see:
+
+```
+
+Architecture.md
+
+```
 
 ---
 
-## Project Goals
+# Project Goals
 
 - Learn Node.js and Express deeply
 - Understand backend architecture through real implementation
@@ -41,7 +62,7 @@ The goal is not only to build an application, but also to create a **reusable ba
 
 ---
 
-## Project Phases
+# Project Phases
 
 The project is developed incrementally.
 
@@ -62,95 +83,104 @@ The project is developed incrementally.
 
 ---
 
-## Features
+# Features
 
 This project gradually implements the core modules of a **real-world eCommerce backend**.
 
-### Authentication & Authorization
+## Authentication & Authorization
 
 - User registration
 - Login with JWT authentication
 - Role-based access control
 
-### Product Catalog
+## Product Catalog
 
 - Product management
 - Category management
 - Product search and filtering
 
-### Cart & Checkout
+## Cart & Checkout
 
 - Shopping cart management
 - Checkout flow
 
-### Order Management
+## Order Management
 
 - Order creation
 - Order tracking
 - Order status updates
 
-### Payments
+## Payments
 
 - Payment processing integration
 - Payment verification
 
-### Inventory
+## Inventory
 
 - Stock management
 - Inventory updates
 
-### Shipping
+## Shipping
 
 - Shipping calculation
 - Order fulfillment
 
-### Background Jobs
+## Background Jobs
 
 - Queue-based processing
 - Email notifications
 - Retry mechanisms
 
-### Observability
+## Observability
 
 - Application logging
 - Monitoring and metrics
 
 ---
 
-## Project Structure
+# Project Structure
 
-```text
+```
+
 enterprise-ecommerce-backend/
 │
 ├── docs/
-│   ├── phases/
-│   ├── decisions/
-│   ├── templates/
-│   └── comparisons/
+│ ├── phases/
+│ ├── decisions/
+│ ├── comparisons/
+│ └── templates/
 │
 ├── src/
 ├── tests/
 │
 ├── README.md
+├── Architecture.md
 ├── .gitignore
 ├── .env.example
 └── package.json
+
 ```
 
 ---
 
-## Documentation
+# Architecture Documentation
 
-Project documentation is organized in the `docs` directory.
+Detailed architecture documentation is available in the `docs` directory.
 
-docs/phases/ → documentation for each development phase  
-docs/decisions/ → architectural decision records (ADR)  
-docs/templates/ → reusable documentation templates  
-docs/comparisons/ → technology and architecture comparisons
+```
+
+docs/phases/ → implementation details for each development phase
+docs/decisions/ → architecture decision records (ADR)
+docs/comparisons/ → architecture and technology comparisons
+docs/templates/ → reusable documentation templates
+
+````
+
+This documentation explains both the **implementation details** and the **reasoning behind architectural decisions**.
 
 ---
 
-## Development Approach
+# Development Approach
 
 This project follows several core engineering principles.
 
@@ -159,45 +189,33 @@ This project follows several core engineering principles.
 - **YAGNI** — Do not implement features before they are needed
 - **SOLID** — Apply clean architecture principles gradually
 
-The focus is on **learning the fundamentals before introducing complexity**.
+The focus is on **learning fundamentals before introducing complexity**.
 
 ---
 
-## Architecture
-
-The backend follows a layered architecture pattern.
-
-Controller → Service → Repository → Database
-
-For a detailed architecture explanation, see:
-
-[Architecture.md](./Architecture.md)
-
----
-
-## Getting Started
+# Getting Started
 
 Follow these steps to set up the project locally.
 
-### 1. Clone the repository
+## 1. Clone the repository
 
 ```bash
 git clone https://github.com/YashRohan07/enterprise-ecommerce-backend
-```
+````
 
-### 2. Navigate to the project directory
+## 2. Navigate to the project directory
 
 ```bash
 cd enterprise-ecommerce-backend
 ```
 
-### 3. Install dependencies
+## 3. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Create environment configuration
+## 4. Create environment configuration
 
 Copy the example environment file:
 
@@ -210,6 +228,10 @@ Then update the environment variables if necessary.
 
 ---
 
-## License
+# License
 
 ISC
+
+```
+
+```
